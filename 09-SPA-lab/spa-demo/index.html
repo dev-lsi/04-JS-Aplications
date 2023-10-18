@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Demo</title>
+    <script src="src/app.js" type="module" strict="false"></script>
+    <style>
+        #views,#guestNav,#userNav {
+            display: none;
+        }
+
+        input{
+            display: block;
+            margin: 4px 2px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <a href="/" id="homeBtn">Home</a>
+        <a href="/catalog" id="catalogBtn">Catalog</a>
+        <a href="/about" id="aboutBtn">About</a>
+        <div id="guestNav">
+            <a href="/login" id="loginBtn">LogIn</a>
+            <a href="/signup" id="registerBtn">SignUp</a>
+        </div>
+        <div id="userNav">
+            <a href="/logout" id="logoutBtn">LogOut</a>
+            <span id="greeting"></span>
+        </div>
+
+        <a href="https://www.google.com" target="_blank">Google</a>
+
+    </nav>
+    <h1>SPA Demo</h1>
+    <main></main>
+
+    <div id="views">
+        <section id="homeView">
+            <h2>Home</h2>
+            <p>Welcome to our site</p>
+        </section>
+
+        <section id="catalogView">
+            <h2>Catalog</h2>
+            <ul id='catalogList'>
+
+            </ul>
+        </section>
+
+        <section id="aboutView">
+            <h2>About Us</h2>
+            <p>read more about this page</p>
+            <p>Phone: +333839</p>
+        </section>
+
+        <section id="loginView">
+            <h1>Login</h1>
+            <form>
+                <label>Email<input type="text" name="email"></label>
+                <label>Password<input type="password" name="password"></label>
+                <input type="submit" value="LogIn">
+            </form>
+        </section>
+
+        <section id="registerView">
+            <h1>Register</h1>
+            <form>
+                <label>Email<input type="text" name="email"></label>
+                <label>Password<input type="password" name="password"></label>
+                <label>Repeat password<input type="password" name="repass"></label>
+                <input type="submit" value="SignUp">
+            </form>
+        </section>
+    </div>
+
+</body>
+
+</html>
