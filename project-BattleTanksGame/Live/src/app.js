@@ -1,16 +1,16 @@
-
-import * as users from "./api/users.js";
-import * as games from "./api/games.js";
-
-
-
+import page from './lib/page.mjs';
+import { addRender } from './middlewares/render.js';
+//import {render} from './lib/lit-html.js';
+import { homeView } from './views/home.js';
 
 
-window.api = {users,games};
+//import page from '../node_modules/page/page.mjs';
+//import {render} from '../node_modules/lit-html/lit-html.js'
 
+const main=document.getElementById('main');
 
+page(addRender(main));
+page('/index.html','/');
+page('/',homeView);
 
-//api.users=users;
-//api.games=games;
-
-//users.login('peter','123456');
+page.start();
