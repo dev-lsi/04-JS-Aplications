@@ -1,0 +1,29 @@
+ul{
+    display:flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    background-color: lightsteelblue;
+}
+ul li{
+    margin:3px 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+main{
+    min-height: 80vh;
+}
+
+footer{
+    background-color: darkolivegreen;
+    color:blanchedalmond;
+    display:fixed;
+    bottom: 0px;
+    right:0px;
+    left:0px;
+    height:100px;
+}
+
