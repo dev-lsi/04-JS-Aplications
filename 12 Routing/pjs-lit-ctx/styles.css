@@ -1,0 +1,35 @@
+ul {
+    background-color: rgb(60, 111, 113);
+    color:blanchedalmond;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    border-bottom: 2px solid grey;
+    align-items: center;
+}
+
+ul li {
+    margin: 2px 10px;
+    align-items: center;
+}
+
+ul li a{
+    text-decoration: none;
+    color:blanchedalmond;
+}
+
+ul li img{
+    margin-top: 6px;
+    height: 60px;
+    border-radius: 50%;
+    
+}
+
+.productList{
+    
+    background-color: darkgreen;
+    display:flex;
+    flex-direction: column;
+    
+}

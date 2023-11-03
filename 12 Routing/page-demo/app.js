@@ -6,11 +6,13 @@ import { showHome } from './views/home.js';
 import { showCatalog} from './views/catalog.js';
 
 
+
     const main = document.querySelector('main');
 
     page('index.html','/');
     page('/',()=>showHome(render));
     page('/catalog',()=>showCatalog(render));
+    page('/catalog/:id', showDetails);
     page('/about',()=>showAbout(render));
 
     page.start();
@@ -19,6 +21,10 @@ import { showCatalog} from './views/catalog.js';
 
         litRender(templateRes,main)
 
+    }
+
+    function showDetails(){
+        console.log('showing details', Date.now());
     }
 
      

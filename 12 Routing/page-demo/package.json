@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lit-html": "^3.0.1",
-    "page": "^1.11.6"
+    "lit-html": "^3.0.2",
+    "page": "^1.11.6",
+    "page.js": "^4.13.3"
   }
 }
