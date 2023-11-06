@@ -10,7 +10,7 @@ const catalogTemplate = (recipes) => html`
     </ul>`
 
     const recipeCard=(recipe)=>html`
-     <li>${recipe.name}</li>
+     <li><a>${recipe.name}</a></li>
     `;
 
 export async  function showCatalog(ctx) {
