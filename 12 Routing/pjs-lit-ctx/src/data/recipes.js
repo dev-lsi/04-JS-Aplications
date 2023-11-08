@@ -11,5 +11,6 @@ export function getAllrecipies(){
 }
 
 export function getById(id){
-    return get(endpoints.recipeById+id);
+    return api.get(endpoints.recipeById+id);
+    
 }
